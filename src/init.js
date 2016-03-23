@@ -31,16 +31,13 @@ $(document).ready(function(){
     console.log(window.dancers)
     $('body').append(dancer.$node);
   });
-  $(".lineup-button").on("click", function(event){
+  BreakDancer.prototype.lineUp = $(".lineup-button").click(function(){
       console.log("clickty click")
-      event.preventDefault();
-      $(".breakDancer").css("align", "center")
-    for(var i = 0; i < window.dancers.length; i++){
-      if(window.dancers.length > 0){
-        // console.log("props", window.dancers[i].setPosition)
-        // $(".addDancerButton").css("right", "0px")
-      };
-    };
+      // event.preventDefault();
+      for(var i = 0; i < window.dancers.length; i++){
+        console.log("clack", dancers[i].$node[0])
+      dancers[i].$node.css("top", "580px");
+    }
   });
 });
 

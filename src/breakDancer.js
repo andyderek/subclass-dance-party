@@ -20,6 +20,6 @@ var BreakDancer = function(top, left, timeBetweenSteps){
     this.$node.css(styleSettings);
   };
 
-  BreakDancer.prototype.lineUp = function(){
 
-  }
+
+  
